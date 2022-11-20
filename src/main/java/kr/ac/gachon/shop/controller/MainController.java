@@ -14,7 +14,7 @@ public class MainController {
     @GetMapping("/")
     public String index(Model model){
         Logger log = null;
-        log.info("main 컨트롤러");
-        return "main";
+        log.info("index 컨트롤러");
+        return "index";
     }
 }
