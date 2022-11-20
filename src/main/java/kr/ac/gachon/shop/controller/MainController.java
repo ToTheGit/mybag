@@ -1,6 +1,5 @@
 package kr.ac.gachon.shop.controller;
 
-import ch.qos.logback.classic.Logger;
 import groovy.util.logging.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,8 +11,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MainController {
     @GetMapping("/")
     public String index(){
-        Logger log = null;
-        log.info("main 컨트롤러");
         return "main";
     }
 }
